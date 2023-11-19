@@ -1,8 +1,11 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+from users.views import user_pages
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///network.db"
 db = SQLAlchemy(app)
+app.register_blueprint(user_pages)
+
 class Post(db.Model):
     id = db.Column(db.Integer(),primary_key = True)
     title = db.Column(db.String(50),nullable = False)
