@@ -1,0 +1,33 @@
+Index: templates/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/index.html b/templates/index.html
+--- a/templates/index.html	
++++ b/templates/index.html	(date 1698859580422)
+@@ -1,23 +1,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title>mainpage</title>
+-    <style>
+-        p{
+-            color:white;
+-            background-color:#000000;
+-            margin-top:0px;
+-            margin-bottom:0px;
+-            padding-left:50px;
+-
+-        }
+-    </style>
+-    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+-
+-</head>
+-<body>
+-  <p  class="greatitel">welcome</p>
+-    <p  class="greatitel">I have a gun behind gitler</p>
+-</body>
+-</html>
+\ No newline at end of file

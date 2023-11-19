@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mainpage</title>
+    <style>
+        p{
+            color:white;
+            background-color:#000000;
+            margin-top:0px;
+            margin-bottom:0px;
+            padding-left:50px;
+
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+</head>
+<body>
+  <p  class="greatitel">welcome</p>
+    <p  class="greatitel">I have a gun behind gitler</p>
+    {% for post in posts %}
+    <h1>{{ post.title }}</h1>
+    <p>{{post.content}}</p>
+    {% endfor %}
+</body>
+</html>
